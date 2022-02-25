@@ -1,0 +1,59 @@
+body{
+    background-image: url("../images/background.png");
+    background-size: 1370px;
+}
+
+.transition {
+    position:relative;
+   
+   height: 100px;
+    
+    
+  }
+  
+  .transition img {
+    position:relative;
+    
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .transition img.peter1:hover{
+    opacity:0;
+    
+  }
+.transition img.peter2:hover{
+    opacity: 0;
+    
+}
+.peter1{
+    position: relative;
+    left: 560px;
+    top: 100px;
+    height: 250px;
+}
+.peter2{
+    position: relative;
+    top: 400px;
+    left: 180px;
+}
+
+.joe{
+    height: 200px;
+    position: relative;
+    top: 400px;
+    left: 100px;
+    animation-name: joe ;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes joe{
+    from{
+        left: 300px;
+    }
+    to{
+        right: 300px;
+    }
+}
+
